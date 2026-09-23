@@ -1,3 +1,26 @@
+## My completed work: Part I (People)
+
+GitHub can't preview the completed notebook because the file is 17.7 MB (it keeps every output and figure). Open it with one of these links instead:
+
+| | Link |
+|---|---|
+| **View and run in Google Colab (recommended, with all outputs)** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kdoo_hBNqEx4sDjPVfqE-KyqGLuLTann) |
+| Open this repository's copy in Colab | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bouchra159/flood-monitoring/blob/main/Copie_de_CCAI_Tutorial_on_Flood_Monitoring_Part_I_People.ipynb) |
+| Read-only view with all outputs (nbviewer) | [View on nbviewer](https://nbviewer.org/github/Bouchra159/flood-monitoring/blob/main/Copie_de_CCAI_Tutorial_on_Flood_Monitoring_Part_I_People.ipynb) |
+| Notebook file in this repository | [Copie_de_CCAI_Tutorial_on_Flood_Monitoring_Part_I_People.ipynb](Copie_de_CCAI_Tutorial_on_Flood_Monitoring_Part_I_People.ipynb) |
+
+**What the completed notebook adds to the tutorial**
+
+| Area | Content |
+|---|---|
+| Full run | Every cell run end to end on a T4 GPU, with carbon tracking (CodeCarbon) |
+| Fixes | Corrected Sentinel-1 normalisation text, metric names and out-of-date comments; explained why the test MSE is lower than the training loss; found and fixed undeclared `-9999` nodata values in the DEM tiles |
+| Exercise solutions (S1–S10) | Precision–recall threshold sweep, error analysis by building density and by tile, early stopping and best checkpoint, a residual U-Net, Sentinel-2 + Sentinel-1 + DEM fusion, a spatial-block holdout repeated over 3 seeds, rotation/flip/CutMix augmentation, a GPU vs. CPU energy comparison, and a summary table of all experiments |
+| Written answers | Every reflection question, the decision-product exercise (built-up area near water, and which stakeholders need it in what form), and the responsible-use reflection |
+| Key results | Adding SAR and DEM gave the best F1 (0.64) and IoU (0.48) at the lowest energy (2.6 Wh); training on the CPU would use about 23x more energy per epoch than on the GPU |
+
+---
+
 # Sea Water Flood Risk Assessment in Egypt using Deep Learning, Sentinel-1 & 2, and Copernicus DEM
 Floods in coastal areas can be extremely destructive natural hazards resulting in societal and economical damage. In this tutorial, explore how to predict building and population density to understand the potential impact from a flooding event.
 
